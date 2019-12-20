@@ -7,7 +7,6 @@
   font-family: 'Dancing Script', cursive;
 }
 
-
 nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -74,15 +73,12 @@ nav a {
   grid-gap: 5px;
   width: 80%;
   margin: 20px 0 20px 10px;
-  
-  
 }
 
 .latest-posts > article{
   padding: 20px;
   transition: 0.2s;
 }
-
 
 .latest-posts > article:hover {
   background-color: rgb(252, 244, 244);
@@ -91,12 +87,12 @@ nav a {
   transition: 0.2s;
 }
 
-.latest-posts h1, .wrap-members h1 {
+h1 {
   text-decoration: underline;
   font-size: 2.2em;
 }
 
-.latest-posts h4, .wrap-members h4 {
+h4 {
   margin: 25px 40px 0 0;
   font-size: 1.5em;
   font-weight: 300;
@@ -105,7 +101,6 @@ nav a {
 }
 
 .wrap-members {
-
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -128,10 +123,60 @@ nav a {
   transition: 0.2s;
 }
 
-
 .wrap-members > article:hover {
   box-shadow: 9px 10px 35px 0px rgba(128,128,128,1);
   font-size: 1.05em;
   transition: 0.2s;
 }
- 
+
+.see-it-all {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-it-all a {
+  font-size: 2em;
+  font-family: 'Lobster', cursive;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 5px blue solid;
+}
+
+.inclusive-components {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  padding: 60px;
+  text-align: center;
+}
+
+.inclusive-components h2 {
+  width: 50%;
+  margin: 50px auto 30px;
+}
+
+.box {
+  width: 25%;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 70px auto;
+}
+
+.box a {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.shade {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 25%;
+  height: 40vh;
+  background-color: white;
+  z-index: 1;
+}
