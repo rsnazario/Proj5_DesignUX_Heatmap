@@ -35,24 +35,24 @@ nav a {
 
 .text-lastest {
   position:absolute;
-  transform: translateX(319%);
+  margin: 15px 40% 0px;
   z-index:1;
   text-align: center;
   border:1px solid black;
   background:white;
   font-family: 'Lobster', cursive;
   font-size: 3em;
-  border-radius: 5px;
-
+  border-radius: 50%;
+  padding: 30px;
 }
 
 .latest-articles > * {
   width: 25%;
   background: rgb(66, 131, 190);
-  border: ;
   color: white;
   font-family: 'Dancing Script', cursive;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 10px;
@@ -63,8 +63,33 @@ nav a {
   background-color: rgb(66, 131, 190,0.8);
 }
 
+.latest-posts {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 5px;
+  width: 80%;
+  margin: 20px 0 20px 10px;
+  font-family: 'Dancing Script', cursive;
+  
+}
 
+.latest-posts > article:hover {
+  background-color: rgb(236, 208, 208);
+  box-shadow: 5px 6px 0 rgb(116, 107, 107);
+  font-size: 1.05em;
+}
 
+.latest-posts h1 {
+  text-decoration: underline;
+  font-size: 2.2em;
+}
 
-
-
+.latest-posts h4 {
+  margin: 25px 40px 0 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+}
