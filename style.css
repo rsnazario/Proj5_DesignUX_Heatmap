@@ -189,3 +189,67 @@ h4 {
   background: url(images/inclusive_design_components.svg) no-repeat center;
   background-size:600px;
 }
+
+.ppl-highlights {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.person-week, .ppl {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo-skew {
+  margin-top: 60px;
+  width: 20vh;
+  height: 20vh;
+  background:  rgb(50, 148, 240);
+  transform: rotate(-20deg);
+  transform-origin: bottom left;
+  border-radius: 13px;
+}
+
+.photo-smaller {
+  margin-top: 60px;
+  width: 10vh;
+  height: 10vh;
+  margin-right: 120px;
+  background:  rgb(50, 148, 240);
+  transform: rotate(-20deg);
+  transform-origin: bottom left;
+  border-radius: 13px;
+}
+
+.photo-smaller:hover {
+  transform: rotate(0deg);
+  transform-origin: bottom left;
+  transition: 0.2s;
+}
+
+.photo-skew:hover {
+  transform: rotate(0deg);
+  transform-origin: bottom left;
+  transition: 0.2s;
+}
+
+.photo-description {
+  width: 70%;
+  margin-left: -150px;
+  margin-top: 30px;
+}
+.ppl-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 0 0 95px;
+}
+
+.ppl {
+  grid-column: span 1;
+  grid-row: span 1;
+  width: 80%;
+  margin-top: 150px;
+}
