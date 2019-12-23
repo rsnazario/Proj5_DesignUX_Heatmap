@@ -6,9 +6,6 @@
 
 ---
 
-![alt text](https://rawcdn.githack.com/rsnazario/Proj5_DesignUX_Heatmap/a56c01c740fae44b9621561b3d17519540d1cf59/index.html) 
-
-
 ## Built With
 
 - HTML5
