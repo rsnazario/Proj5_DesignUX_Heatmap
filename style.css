@@ -92,12 +92,23 @@ h1 {
   font-size: 2.2em;
 }
 
+h3 {
+  margin: 25px 40px 0 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center; 
+}
+
 h4 {
   margin: 25px 40px 0 0;
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.5;
   text-align: justify;
+}
+
+h5 {
+  font-size: 1.3em;
 }
 
 .wrap-members {
@@ -306,4 +317,66 @@ h4 {
   transform: rotate(0deg);
   transform-origin: bottom left;
   transition: 0.2s;
+}
+
+.guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 15px;
+  width: 95%;
+  margin: 20px 0 20px 10px;
+}
+
+
+.guides a {
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.guides ul {
+  padding-inline-start: 50px;
+  line-height: 1.5em;
+}
+
+.guides > article {
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.guides > article:hover {
+  box-shadow: 9px 10px 35px 0px rgba(128,128,128,1);
+  transform: scale(1.1); 
+  transition: 0.2s;
+  z-index: 100;  
+}
+
+.news-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 100vh;
+  margin: 100px auto 100px;
+  border-radius: 10px;
+  background-color: rgb(51, 174, 223);
+  padding-top: 50px;
+}
+
+.circle {
+  display: flex;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+}
+
+.news-container > input {
+  width: 20%;
+  height: 60px;
+  font-size: 1.5em;
 }
