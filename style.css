@@ -112,7 +112,9 @@ nav a {
   transform: scale(1.1);
 }
 
-span, h1, h2 {
+span,
+h1,
+h2 {
   text-decoration: underline;
   font-size: 2.2em;
 }
@@ -336,6 +338,10 @@ h4 {
   margin: 20px 0 20px 10px;
 }
 
+footer ul {
+  padding: -10px 50px 30px;
+}
+
 .guides ul {
   padding-inline-start: 50px;
   line-height: 1.5em;
@@ -386,10 +392,6 @@ footer {
   padding: 10px 60px;
 }
 
-footer ul {
-  padding: -10px 50px 30px;
-}
-
 footer li {
   padding: 5px;
   font-size: 1.5em;
@@ -397,7 +399,6 @@ footer li {
 }
 
 footer small {
-
   display: block;
   font-size: 1.1em;
   margin: 100px 550px 0;
