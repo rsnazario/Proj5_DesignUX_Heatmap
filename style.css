@@ -112,7 +112,7 @@ nav a {
   transform: scale(1.1);
 }
 
-h1 {
+span, h1, h2 {
   text-decoration: underline;
   font-size: 2.2em;
 }
@@ -378,30 +378,31 @@ h4 {
 
 /* FOOTER */
 
-.footer {
+footer {
   background-color: #007ef2;
   color: white;
   text-align: center;
   height: 400px;
-  padding: 0 60px;
+  padding: 10px 60px;
 }
 
-.footer ul {
-  padding: 50px;
+footer ul {
+  padding: -10px 50px 30px;
 }
 
-.footer li {
+footer li {
   padding: 5px;
   font-size: 1.5em;
   display: inline-block;
 }
 
-.footer small {
+footer small {
+
   display: block;
   font-size: 1.1em;
-  margin: 0 550px;
+  margin: 100px 550px 0;
 }
 
-.footer > .contact {
+footer > .contact {
   margin-top: 50px;
 }
