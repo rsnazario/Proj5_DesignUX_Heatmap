@@ -253,3 +253,57 @@ h4 {
   width: 80%;
   margin-top: 150px;
 }
+
+/* DESIGN SYSTEMS */
+
+.smashing-book {
+  background-color: #007EF2;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+   "left right";
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.smashing-book > *  {
+  color:white;
+}
+
+.smashing-book-content {
+  margin-left: 124px;
+}
+
+.smashing-book-content p, h1, a {
+  padding: 20px;
+}
+
+.smashing-book-content button {
+  padding: 15px;
+  font-weight: 900;
+  font-size: 1.3em;
+  background: white;
+  color: #007EF2;
+  border: none;
+  border-radius: 8px;
+}
+
+.book {
+  margin-left: 100px;
+  grid-area:right;
+  align-self: center;
+  justify-self: center;
+  width: 170px;
+  height:240px;
+  background:  rgb(61, 68, 75);
+  transform: rotate(-10deg);
+  transform-origin: bottom left;
+  border-radius: 13px;
+}
+
+.book:hover {
+  transform: rotate(0deg);
+  transform-origin: bottom left;
+  transition: 0.2s;
+}
