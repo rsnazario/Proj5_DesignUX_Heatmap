@@ -6,11 +6,11 @@
   box-sizing: border-box;
   font-family: 'Dancing Script', cursive;
 }
+
 .header {
   padding: 10px;
-  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(31,95,163,1) 100%);
-  box-shadow: inset -4px -5px 76px 0px rgba(0,0,0,0.1);
-
+  background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(31, 95, 163, 1) 100%);
+  box-shadow: inset -4px -5px 76px 0 rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -21,8 +21,13 @@ nav {
   grid-gap: 1px;
   width: 100%;
   height: 150px;
-  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(31,95,163,1) 100%);
-  
+  background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(31, 95, 163, 1) 100%);
+}
+
+footer p {
+  display: block;
+  font-size: 1.1em;
+  margin: 0 30vw;
 }
 
 .smashing-book-content p,
@@ -39,6 +44,38 @@ nav a {
   color: white;
 }
 
+footer li a {
+  color: white;
+}
+
+.guides a {
+  text-decoration: none;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #007ef2;
+}
+
+.see-it-all a {
+  font-size: 2em;
+  font-family: 'Lobster', cursive;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 5px rgb(5, 132, 182) solid;
+}
+
+.contact a {
+  color: white;
+  padding: 0;
+}
+
+.box a {
+  padding: 10px;
+  font-size: 2em;
+  text-decoration: none;
+  color: #333;
+}
+
 nav a:last-child {
   border: 1px solid white;
   border-radius: 5px;
@@ -47,24 +84,25 @@ nav a:last-child {
 .latest-articles {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px,2fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
   width: 100%;
   height: 1000px;
 }
 
 .text-lastest {
   position: absolute;
-  margin-left:50%;
+  margin-left: 50%;
   z-index: 1;
   transform: translateX(-50%);
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 .text-lastest p {
   background-color: white;
-  padding:10px;
+  padding: 10px;
 }
+
 .text-lastest p:last-child {
   display: inline-block;
 }
@@ -84,14 +122,9 @@ nav a:last-child {
   background: rgb(9, 84, 153);
 }
 
-.guides a {
-  text-decoration: none;
-  font-size: 1.5em;
-  line-height: 1.5em;
-}
-
 .guides > article {
-  width: 80%;
+  width: 90%;
+  padding: 10px;
   margin-left: 50px;
   margin-top: 50px;
 }
@@ -113,7 +146,7 @@ nav a:last-child {
 
 .wrap-members > article {
   grid-column: span 1;
-  grid-row: span 3;
+  grid-row: span 2.5;
   padding: 20px;
   transition: 0.2s;
 }
@@ -128,7 +161,7 @@ span,
 h1,
 h2 {
   text-decoration: underline;
-  font-size: 2.2em;
+  font-size: 1.8em;
 }
 
 h4 {
@@ -150,8 +183,8 @@ h4 {
 .members {
   background: #007ef2;
   grid-column: span 2;
-  grid-row: span 3;
-  border-radius: 20px;
+  grid-row: span 2;
+  border-radius: 15px;
   margin: 10px;
 }
 
@@ -168,15 +201,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.see-it-all a {
-  font-size: 2em;
-  font-family: 'Lobster', cursive;
-  padding-bottom: 10px;
-  text-decoration: none;
-  color: black;
-  border-bottom: 5px rgb(5, 132, 182) solid;
 }
 
 .inclusive-components {
@@ -198,13 +222,6 @@ h4 {
   border-radius: 10px;
   margin: 70px auto;
   padding: 10px;
-}
-
-.box a {
-  padding: 10px;
-  font-size: 2em;
-  text-decoration: none;
-  color: #333;
 }
 
 .box a:hover {
@@ -350,8 +367,8 @@ footer ul {
 }
 
 .guides ul {
-  padding-inline-start: 50px;
-  line-height: 1.5em;
+  padding-inline-start: 40px;
+  line-height: 1em;
 }
 
 .guides > article:hover {
@@ -392,7 +409,7 @@ footer ul {
 /* FOOTER */
 
 footer {
-  height: 500px;
+  height: 450px;
   background-color: #007ef2;
   color: white;
   text-align: center;
@@ -412,20 +429,6 @@ footer li {
   display: inline-block;
 }
 
-footer li a  {
-  color: white;
-}
-footer p {
-  display: block;
-  font-size: 1.1em;
-  margin: 0 30vw;
-}
-
 footer > .contact {
   margin-top: 50px;
-}
-
-.contact a {
-  color: white;
-  padding: 0;
 }
