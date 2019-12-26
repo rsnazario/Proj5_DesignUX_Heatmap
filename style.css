@@ -181,7 +181,6 @@ h4 {
 
 .inclusive-components {
   width: 100%;
-  height: 100vh;
   background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(26, 102, 184, 1) 100%);
   padding: 60px;
   text-align: center;
@@ -206,10 +205,6 @@ h4 {
   font-size: 2em;
   text-decoration: none;
   color: #333;
-}
-
-.footer a {
-  color: white;
 }
 
 .box a:hover {
@@ -397,11 +392,18 @@ footer ul {
 /* FOOTER */
 
 footer {
+  height: 500px;
   background-color: #007ef2;
   color: white;
   text-align: center;
-  height: 400px;
-  padding: 10px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-links {
+  width: 80%;
 }
 
 footer li {
@@ -410,12 +412,20 @@ footer li {
   display: inline-block;
 }
 
-footer small {
+footer li a  {
+  color: white;
+}
+footer p {
   display: block;
   font-size: 1.1em;
-  margin: 100px 550px 0;
+  margin: 0 30vw;
 }
 
 footer > .contact {
   margin-top: 50px;
+}
+
+.contact a {
+  color: white;
+  padding: 0;
 }
