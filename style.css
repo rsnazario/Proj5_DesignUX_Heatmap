@@ -7,7 +7,7 @@
   font-family: 'Dancing Script', cursive;
 }
 
-.header {
+header {
   padding: 10px;
   background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(31, 95, 163, 1) 100%);
   box-shadow: inset -4px -5px 76px 0 rgba(0, 0, 0, 0.1);
